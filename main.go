@@ -10,7 +10,8 @@ import (
 
 func main() {
 	if len(os.Args) < 2 || len(os.Args) > 3 {
-		fmt.Println("Error: Incorrect number of arguments ", len(os.Args))
+		fmt.Println("Usage: go run . [STRING] [BANNER]")
+		fmt.Println("EX: go run . something standard")
 		return
 	}
 	// Get an input text from the commandline.
